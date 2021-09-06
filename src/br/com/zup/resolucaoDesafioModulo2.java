@@ -12,7 +12,7 @@ public class resolucaoDesafioModulo2 {
         boolean operarMenu = true;
 
         //Entrega mínima:
-
+        /*
         System.out.println("Olá, seja bem vinde ao nosso sistema de gerenciamento de funcionários!");
         System.out.println("Por favor, digite o nome do funcionário que gostaria de cadastrar: ");
         String nome = input.nextLine();
@@ -23,7 +23,9 @@ public class resolucaoDesafioModulo2 {
         System.out.println("Por favor, insira o CPF do funcionário: ");
         String cpf = input.nextLine();
         System.out.println(funcionarios);
-        System.out.println("Funcionário cadastrado com sucesso.");
+        System.out.println("Funcionário cadastrado com sucesso.");*/
+
+
 
 
     }
