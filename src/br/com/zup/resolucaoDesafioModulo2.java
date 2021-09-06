@@ -29,6 +29,7 @@ public class resolucaoDesafioModulo2 {
 
         int escolhaUsuario = 0;
         while (operarMenu == true) {
+            System.out.println("\n");
             System.out.println("Para cadastrar um funcionário, digite: 1");
             System.out.println("Para exibir uma lista dos funcionários cadastrados, digite: 2");
             System.out.println("Para excluir um funcionário, digite: 3");
@@ -55,7 +56,7 @@ public class resolucaoDesafioModulo2 {
                     funcionarios.put(cpf, nome + " Telefone: " + telefone + " Email: " + email);
                 }
 
-            }else if (escolhaUsuario == 2) {
+            } else if (escolhaUsuario == 2) {
                 if (funcionarios.size() == 0) {
                     System.out.println("Ainda não existem funcionários cadastrados.");
                 } else {
@@ -63,21 +64,23 @@ public class resolucaoDesafioModulo2 {
                     for (String referencia : funcionarios.keySet()) {
                         System.out.println("Nome: " + funcionarios.get(referencia));
                     }
-                }}else if (escolhaUsuario == 3) {
-                    if (funcionarios.size() == 0) {
-                        System.out.println("Ainda não existem funcionários cadastrados.");
-                    } else {
-                        System.out.println("Por favor, digite o cpf do funcionário a ser excluído: ");
-                        String deleteCPF;
-                        String cpfDeletado = input.nextLine();
-                        for (String referencia2 : funcionarios.keySet()) {
-                            if (referencia2.contains(cpfDeletado)) {
-                                System.out.println("Funcionário excluído com sucesso.");
-                                deleteCPF = cpfDeletado;
-                            }
+                }
+            } else if (escolhaUsuario == 3) {
+                if (funcionarios.size() == 0) {
+                    System.out.println("Ainda não existem funcionários cadastrados.");
+                } else {
+                    System.out.println("Por favor, digite o cpf do funcionário a ser excluído: ");
+                    String deleteCPF;
+                    String cpfDeletado = input.nextLine();
+                    for (String referencia2 : funcionarios.keySet()) {
+                        if (referencia2.contains(cpfDeletado)) {
+                            System.out.println("Funcionário excluído com sucesso.");
+                            deleteCPF = cpfDeletado;
                         }
-                        funcionarios.remove(cpfDeletado);
-                    } }else if (escolhaUsuario == 4) {
+                    }
+                    funcionarios.remove(cpfDeletado);
+                }
+            } else if (escolhaUsuario == 4) {
                 System.out.println("Obrigada, até a próxima!");
                 operarMenu = false;
             } else {
