@@ -36,7 +36,20 @@ public class resolucaoDesafioModulo2 {
             escolhaUsuario = input.nextInt();
             input.nextLine();
 
+            if (escolhaUsuario == 1) {
+                System.out.println("Por favor, digite o nome do funcionário: ");
+                String nome = input.nextLine();
+
+                System.out.println("Por favor, insira o telefone do funcionário: ");
+                String telefone = input.nextLine();
+
+                System.out.println("Por favor, insira o email do funcionário: ");
+                String email = input.nextLine();
+
+                System.out.println("Por favor, insira o CPF do funcionário: ");
+                String cpf = input.nextLine();
 
 
-    }
+
+            }
 }
