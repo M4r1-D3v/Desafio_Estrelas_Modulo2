@@ -48,6 +48,17 @@ public class resolucaoDesafioModulo2 {
 
                 System.out.println("Por favor, insira o CPF do funcionário: ");
                 String cpf = input.nextLine();
+            }else if (escolhaUsuario == 2) {
+                if (funcionarios.size() == 0) {
+                    System.out.println("Ainda não existem funcionários cadastrados.");
+                } else {
+
+                    System.out.println("Lista dos funcionários cadastrados: ");
+                    for (String referencia : funcionarios.keySet()) {
+                        System.out.println("Nome: " + funcionarios.get(referencia));
+                    }
+                }
+            }
 
 
 
