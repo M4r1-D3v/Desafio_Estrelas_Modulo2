@@ -22,6 +22,9 @@ public class resolucaoDesafioModulo2 {
         String email = input.nextLine();
         System.out.println("Por favor, insira o CPF do funcionário: ");
         String cpf = input.nextLine();
+        System.out.println(funcionarios);
+        System.out.println("Funcionário cadastrado com sucesso.");
+
 
     }
 }
