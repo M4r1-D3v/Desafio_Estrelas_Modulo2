@@ -52,15 +52,38 @@ public class resolucaoDesafioModulo2 {
                 if (funcionarios.size() == 0) {
                     System.out.println("Ainda não existem funcionários cadastrados.");
                 } else {
-
                     System.out.println("Lista dos funcionários cadastrados: ");
                     for (String referencia : funcionarios.keySet()) {
                         System.out.println("Nome: " + funcionarios.get(referencia));
                     }
-                }
+                }}else if (escolhaUsuario == 3) {
+                    if (funcionarios.size() == 0) {
+                        System.out.println("Ainda não existem funcionários cadastrados.");
+                    } else {
+                        System.out.println("Por favor, digite o cpf do funcionário a ser excluído: ");
+                        String deleteCPF;
+                        String cpfDeletado = input.nextLine();
+                        for (String referencia2 : funcionarios.keySet()) {
+                            if (referencia2.contains(cpfDeletado)) {
+                                System.out.println("Funcionário excluído com sucesso.");
+                                deleteCPF = cpfDeletado;
+                            }
+                        }
+                        funcionarios.remove(cpfDeletado);
+                    } }else if (escolhaUsuario == 4) {
+                System.out.println("Obrigada, até a próxima!");
+                operarMenu = false;
+            } else {
+                System.out.println("Por favor digite um número válido.");
             }
-
-
-
-            }
+        }
+    }
 }
+
+
+
+
+
+
+
+
