@@ -52,7 +52,7 @@ public class resolucaoDesafioModulo2 {
                 if (funcionarios.containsKey(cpf)) {
                     System.out.println("Este CPF já existe no sistema. ");
                 } else {
-                    funcionarios.put(cpf, " Nome: " + nome + " Telefone: " + telefone + " Email: " + email);
+                    funcionarios.put(cpf, nome + " Telefone: " + telefone + " Email: " + email);
                 }
 
             }else if (escolhaUsuario == 2) {
